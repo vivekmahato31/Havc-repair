@@ -50,6 +50,26 @@ All images currently used in the UI are generated SVG placeholders. They are not
 
 Replace placeholders for: team photo, branded truck, finished install, commercial refrigeration job. The current hero and service art visibly carry a development-only replacement label in the layout. Placeholder SVGs are intentionally lightweight; no claim is made that they depict the actual business or its technicians.
 
+
+## Preview vs. launch (important)
+
+This repo is a **preview**: it is `noindex` and `robots.txt` disallows crawling, and canonical/og URLs use `VITE_SITE_URL` (default: the Vercel preview URL).
+
+At launch, set these env vars in the host and replace `public/robots.txt`:
+
+```
+VITE_SITE_URL=https://<final-domain>
+VITE_ALLOW_INDEXING=true
+```
+
+## Images
+
+Run `npm run fetch-images` on a machine with internet access. It downloads the existing site's images into `public/images/original/`; the site already references them. Until then each image falls back to a placeholder SVG. Confirm with the owner that the stock-looking images can be reused, and replace them with real photos when available. Set `realPhotosApproved: true` in `src/config/business.js` once real team and job photos are added to the About page.
+
+## Config flags changed in this revision
+
+`primaryPhoneConfirmed` and `googleProfileConfirmed` are now `true` (phone is on the company's own site; the Google link is the business's Maps listing). All other claim flags remain `false`.
+
 ## NOT CONNECTED / owner checklist
 
 - [ ] Confirm primary phone `(817) 260-0888`; site currently uses this single consistent number pending confirmation.

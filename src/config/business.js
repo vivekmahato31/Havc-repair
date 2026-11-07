@@ -4,9 +4,9 @@ export const business = {
   location:'Central Office, Arlington, TX', familyOwned:true,
   facebook:'https://www.facebook.com/texashvacrepair', website:'https://txhvacrepair.com',
   serviceSummary:'Family-owned HVAC and refrigeration service for homes and businesses across Dallas–Fort Worth.',
-  claims:{ primaryPhoneConfirmed:false, secondaryPhoneConfirmed:false, addressConfirmed:false, emergency247Confirmed:false, satisfactionGuaranteeConfirmed:false, yearsInBusinessConfirmed:false, googleProfileConfirmed:false, hoursConfirmed:false, licenseConfirmed:false, insuranceConfirmed:false, manufacturerAuthorizationsConfirmed:false, currentSpecialConfirmed:false, homeWarrantyPolicyConfirmed:false, complaintProcessConfirmed:false, realPhotosApproved:false },
+  claims:{ primaryPhoneConfirmed:true, secondaryPhoneConfirmed:false, addressConfirmed:false, emergency247Confirmed:false, satisfactionGuaranteeConfirmed:false, yearsInBusinessConfirmed:false, googleProfileConfirmed:true, hoursConfirmed:false, licenseConfirmed:false, insuranceConfirmed:false, manufacturerAuthorizationsConfirmed:false, currentSpecialConfirmed:false, homeWarrantyPolicyConfirmed:false, complaintProcessConfirmed:false, realPhotosApproved:false },
   // [CONFIRM] Values below must be supplied by the owner before display.
-  secondaryPhone:'8178641220', streetAddress:'7121 Blackberry Dr, Arlington, TX 76016', googleProfileUrl:'', googleReviewUrl:'',
+  secondaryPhone:'8178641220', streetAddress:'7121 Blackberry Dr, Arlington, TX 76016', googleProfileUrl:'https://maps.app.goo.gl/NGP1SijNdF819TuJ6', googleReviewUrl:'https://maps.app.goo.gl/NGP1SijNdF819TuJ6',
   googleRating:null, googleReviewCount:null, hours:[], licenseNumber:'', insuranceStatement:'', manufacturerNames:[], currentSpecial:null,
   emergencyProcess:'Emergency service available. Call to confirm availability.', homeWarrantyContent:'', complaintProcessContent:'',
   // [CONFIRM] Site claims; not rendered unless their corresponding flags are true.

@@ -1,3 +1,4 @@
+# Preview site: indexing is blocked until the owner approves launch.
+# At launch, replace with: User-agent: * / Allow: / / Sitemap: https://<final-domain>/sitemap.xml
 User-agent: *
-Allow: /
-Sitemap: https://txhvacrepair.com/sitemap.xml
+Disallow: /
