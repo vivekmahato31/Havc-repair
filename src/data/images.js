@@ -1,11 +1,11 @@
-// Run `npm run fetch-images` on a machine that can reach the old site to download these into public/images/original.
-// If a file is missing, <Photo/> falls back to the placeholder SVG.
+// Dummy illustrations for the demo. To switch to real photos, drop files into public/images/original
+// (residential-ac.jpg, services-ac.jpg, ...) and change the paths below.
 export const images={
-  hero:'/images/original/residential-ac.jpg',
-  acRepair:'/images/original/services-ac.jpg',
-  heating:'/images/original/services-heating.jpg',
-  leak:'/images/original/services-leak-repair.jpg',
-  installation:'/images/original/quality-parts.jpg',
-  maintenance:'/images/original/quality-service.jpg',
+  hero:'/images/hero-placeholder.svg',
+  acRepair:'/images/placeholder-ac.svg',
+  heating:'/images/placeholder-heat.svg',
+  leak:'/images/placeholder-leak.svg',
+  installation:'/images/placeholder-install.svg',
+  maintenance:'/images/placeholder-maintenance.svg',
 };
 export const fallbackImage='/images/hero-placeholder.svg';
